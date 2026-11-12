@@ -3,28 +3,75 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CHAGA ELIKSYRAS | Natūrali Miško Galia</title>
+  <title>ANDREDA | Arbata „MOTERS ŠVELNUMAS“</title>
   <link href="https://googleapis.com" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <header>
-    <div class="logo">🍄 CHAGA ELIKSYRAS</div>
-    <div class="badge">Surinkta Lietuvos miškuose • Siuntimas per 1–2 d. d.</div>
+    <div class="logo">ANDREDA</div>
+    <div class="badge">📞 +370 621 15134 • Skuodas</div>
   </header>
 
   <section class="hero">
-    <h1>Natūralus jaunystės ir imuniteto eliksyras iš Lietuvos beržynų</h1>
-    <p>100 % natūralus juodojo beržo grybas (Chaga) – antioksidantų šaltinis jūsų energijai, virškinimui ir stipriam imunitetui.</p>
+    <div class="hero-content">
+      <div class="hero-text">
+        <span class="hero-sub">Gamtos spalvos jūsų harmonijai</span>
+        <h1>MOTERS ŠVELNUMAS</h1>
+        <p class="hero-lead">Gaivinanti vaisinė-mėtinė biri arbata, praturtinta hibisko žiedais, pipirmėte ir apelsinų žievelėmis.</p>
+        <p class="hero-quote">„Kiekvienas puodelis – akimirka sau“</p>
+        <div class="hero-badges">
+          <span>🌿 100 % Natūrali</span>
+          <span>🤍 Gamtos harmonija</span>
+          <span>☕ Šiltam ir atvėsintam gėrimui</span>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="etikete.png" alt="Arbata Moters Švelnumas etiketė">
+      </div>
+    </div>
   </section>
 
+  <!-- PREKIŲ PASIRINKIMAS (100g / 200g) -->
   <main class="container">
+    <h2 class="section-title">Pasirinkite pakuotės dydį</h2>
     <div class="grid" id="prekiu-sarasas"></div>
+
+    <!-- IŠSAMI INFORMACIJA APIE ARBATĄ -->
+    <div class="info-section">
+      <div class="info-card">
+        <h3>🌿 Kuo ypatingos sudedamosios dalys?</h3>
+        <ul>
+          <li><strong>Hibiskas (kinrožė) – 45 %:</strong> rubino spalvos augalų lobis, turintis antocianinų ir polifenolių. Suteikia gėrimui nuostabią spalvą ir gaivų vaisinį rūgštumą.</li>
+          <li><strong>Arbūzų skonio arbata – 30 %:</strong> suteikia lengvą vasarišką gaivumą ir malonų saldumą.</li>
+          <li><strong>Apelsinų žievelės – 15 %:</strong> citrusinė energija, aromatiniai eteriniai aliejai ir flavonoidai (hesperidinas).</li>
+          <li><strong>Pipirmėtė – 10 %:</strong> gaiva ir lengvumo pojūtis dėl sudėtyje esančio mentolio, tradiciškai naudojama virškinimo komfortui palaikyti.</li>
+        </ul>
+      </div>
+
+      <div class="info-card">
+        <h3>🌸 Kodėl verta rinktis „MOTERS ŠVELNUMĄ“?</h3>
+        <ul>
+          <li>✔ Augalinių antioksidantų turintys hibisko žiedai.</li>
+          <li>✔ Gaivus pipirmėtės ir citrusinių vaisių derinys.</li>
+          <li>✔ Malonus arbūzų aromatas ir natūralus vaisinis rūgštumas.</li>
+          <li>✔ Puikiai tinka tiek šiltai, tiek šaltai arbatai ruošti.</li>
+          <li>✔ Puikus pasirinkimas kasdieniam atsipalaidavimo ir savęs palepinimo ritualui.</li>
+        </ul>
+
+        <div class="prep-box">
+          <h4>🍵 Kaip paruošti?</h4>
+          <p>1–2 arbatinius šaukštelius arbatos užpilkite 200–250 ml verdančio vandens. Uždenkite ir palaikykite 5–7 minutes. Norite gaivos? Atvėsinkite arbatą, įdėkite ledo kubelių, šviežios apelsino skiltelės ar mėtų lapelių.</p>
+        </div>
+      </div>
+    </div>
   </main>
 
   <footer>
-    © 2026 Chaga Eliksyras • Visos teisės saugomos • Atsiskaitymas per Paysera
+    <p><strong>Gamintojas: IV „Andreda“</strong> • Skuodas • Tel. +370 621 15134</p>
+    <p style="margin-top: 8px;"><a href="taisykles.html" style="color: var(--burgundy); font-weight: 600;">Pirkimo–pardavimo taisyklės ir Privatumo politika</a></p>
+    <p class="footer-small">© 2026 Visos teisės saugomos • Atsiskaitymas per Paysera</p>
   </footer>
 
   <!-- Pirkimo forma -->
@@ -36,7 +83,7 @@
       
       <form onsubmit="pateiktiUzsakyma(event)">
         <label>Vardas, Pavardė</label>
-        <input type="text" id="vardas" required placeholder="Pvz.: Lukas Kazlauskas">
+        <input type="text" id="vardas" required placeholder="Pvz.: Rasa Kazlauskienė">
         
         <label>Telefono numeris (SMS dėl siuntos)</label>
         <input type="tel" id="telefonas" required placeholder="+370 600 00000">
